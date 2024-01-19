@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="styles.css" rel="stylesheet" type="text/css" media="screen">
+    <title>RestFarm</title>
+</head>
+<body>
+    <div id="wrapper">
+		<header>
+            <a href=""><img src="imgs\logo.png" alt="logo" style="margin-left: 55px;"></a>
+        </header>
+		<nav>
+            <ul class="top-menu">
+                <li><a href="./index.html">Главная</a></li>
+                <li><a href="./about_us.html">О нас</a></li>
+                <li><a href="./programm.html">Программа</a></li>
+                <li><a href="./reviews.html">Отзывы</a></li>
+            </ul>
+        </nav>
+		<div id="heading"></div>
+		<section style="position: relative;">
+            <img src="imgs\main_back_1.png" alt="Product 1" width="900" height="450">
+            <div style="position: absolute; top: 20px; left: 20px; color: white; text-align: left; font-size: 2em;">
+              <h1>ОТВЛЕКИТЕСЬ ОТ
+                 ГОРОДСКОЙ СУЕТЫ</h1>
+              <p>ВСТРЕТЬТЕСЬ С ПРИРОДОЙ УЖЕ СЕГОДНЯ.</p>
+            
+              <div style="display: grid; grid-template-columns: repeat(3, 1fr); grid-gap: 25px; margin-top: 400px; margin-left: -90px">
+                <div style="text-align: center;">
+                    <img src="imgs\main_cows.png" alt="" width="296" height="306">
+                    <p style="white-space: pre-line;">УНИКАЛЬНЫЙ ОПЫТ НА СВЕЖЕМ ВОЗДУХЕ</p>
+                </div>
+                <div style="text-align: center;">
+                    <img src="imgs\main_grandfather.png" alt="g" width="296" height="306">
+                    <p style="white-space: pre-line;">НОВЫЕ ИНТЕРЕСНЫЕ ЗНАКОМСТВА</p>
+
+                </div>
+                <div style="text-align: center;">
+                    <img src="imgs\main_edinstvo.png" alt="" width="296" height="306">
+                    <p style="white-space: pre-line;">ЕДИНСТВО С ПРИРОДОЙ</p>
+
+                </div>
+            </div>
+                
+          </section>
+          
+	</div>
+    <footer>
+        <div class="overlay" style="position: relative; margin-top: 450px; margin-left: 240px">
+          <img src="imgs\main_foot.png" alt="Footer Image" width="1000px">
+          <div class="text" style="position: absolute; top: 20%; left: 25%; transform: translate(-50%, -50%); color: white; font-size: 36px;">СВЯЖИТЕСЬ С НАМИ УЖЕ СЕГОДНЯ</div>
+          <div class="additional-text" style="position: absolute; top: 38%; left: 12%; transform: translate(-50%, -50%); color: white; font-size: 18px;">— Телефон: +7 999 999 99 99</div> 
+          <div class="additional-text-2" style="position: absolute; top: 51%; left: 13%; transform: translate(-50%, -50%); color: white; font-size: 18px;">— Почта: questions@RestFarm.ru</div>  
+          <div class="additional-text-2" style="position: absolute; top: 70%; left: 23%; transform: translate(-50%, -50%); color: white; font-size: 18px;">Подпишитесь на новости из глубинки и получите скидку 10%</div>  
+          <input type="text" id="emailInput" placeholder="Enter your email" style="position: absolute; top: 80%; left: 13%; transform: translate(-50%, -50%); background-color: white; width: 200px; height: 30px; text-align: center;">    
+          <button id="subscribeButton" onclick="subscribe()" style="position: absolute; top: 80%; left: 25%; transform: translate(-50%, -50%); background-color: red; color: white; padding: 10px 20px; border: none; cursor: pointer; height: 30px;">Подписаться</button>
+        </div>
+      </footer>
+      
+      <script>
+        function subscribe() {
+          var emailInput = document.getElementById('emailInput');
+          var subscribeButton = document.getElementById('subscribeButton');
+      
+          emailInput.style.display = 'none';
+          subscribeButton.innerHTML = 'Благодарим!';
+        }
+      </script>
+            
+        </div>
+      </footer>
+      
+</body>
+</html>
